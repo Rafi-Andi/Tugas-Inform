@@ -1,3 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-mode-primary: oklch(29.3% 0.066 243.157);
+  --color-dark-mode-secondary: oklch(25.7% 0.09 281.288);
+  --color-primary: oklch(48.8% 0.243 264.376);
+  --color-secondary: oklch(48.8% 0.243 264.376);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
