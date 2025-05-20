@@ -7,7 +7,7 @@ git clone https://github.com/Rafi-Andi/Tugas-Inform.git .
 
 1. **Masuk ke folder proyek**
    ```bash
-   cd capstone2
+   cd nama-folder
    ```
 
 2. **Install dependencies**
