@@ -25,14 +25,14 @@ const ListProduct = () => {
           Headphone
         </div>
       </div>
-      <div className="flex p-10">
+      <div className="flex p-10 gap-8 flex-wrap justify-center">
         <div>
-          <div className="bg-gray-100 px-4 py-9 rounded-2xl relative">
-            <img src="../../vite.svg" alt="" width="200px" />
+          <div className=" rounded-2xl relative">
+            <img className="rounded-3xl" src="../../assets/cobafoto.png" alt="" width="240px" />
             <div className="bg-primary w-fit px-2 py-1 rounded-2xl absolute top-2 left-2">
                 <p className="text-white text-[12px]">50% Off</p>
             </div>
-            <div className="bg-white rounded-2xl absolute top-2 right-2 cursor-pointer">
+            <div className="bg-white rounded-2xl absolute top-2 right-2 cursor-pointer shadow-2xl">
                 <p className="p-1 text-sm"><Minimize size="16"/></p>
             </div>
           </div>
@@ -42,8 +42,63 @@ const ListProduct = () => {
             <p>⭐5.0</p>
           </div>
           <p className="font-[600]">Merek produk disini</p>
-          <p className="font-[400]">$400.00 <span className="text-gray-400 line-through">$420.00</span></p>
+          <p className="font-[500]">$400.00 <span className="text-gray-400 line-through">$420.00</span></p>
         </div>
+        <div>
+          <div className=" rounded-2xl relative">
+            <img className="rounded-3xl" src="../../assets/cobafoto.png" alt="" width="240px" />
+            <div className="bg-primary w-fit px-2 py-1 rounded-2xl absolute top-2 left-2">
+                <p className="text-white text-[12px]">50% Off</p>
+            </div>
+            <div className="bg-white rounded-2xl absolute top-2 right-2 cursor-pointer shadow-2xl">
+                <p className="p-1 text-sm"><Minimize size="16"/></p>
+            </div>
+          </div>
+
+          <div className="flex justify-between">
+            <p className="text-gray-400">Kategori</p>
+            <p>⭐5.0</p>
+          </div>
+          <p className="font-[600]">Merek produk disini</p>
+          <p className="font-[500]">$400.00 <span className="text-gray-400 line-through">$420.00</span></p>
+        </div>
+        <div>
+          <div className=" rounded-2xl relative">
+            <img className="rounded-3xl" src="../../assets/cobafoto.png" alt="" width="240px" />
+            <div className="bg-primary w-fit px-2 py-1 rounded-2xl absolute top-2 left-2">
+                <p className="text-white text-[12px]">50% Off</p>
+            </div>
+            <div className="bg-white rounded-2xl absolute top-2 right-2 cursor-pointer shadow-2xl">
+                <p className="p-1 text-sm"><Minimize size="16"/></p>
+            </div>
+          </div>
+
+          <div className="flex justify-between">
+            <p className="text-gray-400">Kategori</p>
+            <p>⭐5.0</p>
+          </div>
+          <p className="font-[600]">Merek produk disini</p>
+          <p className="font-[500]">$400.00 <span className="text-gray-400 line-through">$420.00</span></p>
+        </div>
+        <div>
+          <div className=" rounded-2xl relative">
+            <img className="rounded-3xl" src="../../assets/cobafoto.png" alt="" width="240px" />
+            <div className="bg-primary w-fit px-2 py-1 rounded-2xl absolute top-2 left-2">
+                <p className="text-white text-[12px]">50% Off</p>
+            </div>
+            <div className="bg-white rounded-2xl absolute top-2 right-2 cursor-pointer shadow-2xl">
+                <p className="p-1 text-sm"><Minimize size="16"/></p>
+            </div>
+          </div>
+
+          <div className="flex justify-between">
+            <p className="text-gray-400">Kategori</p>
+            <p>⭐5.0</p>
+          </div>
+          <p className="font-[600]">Merek produk disini</p>
+          <p className="font-[500]">$400.00 <span className="text-gray-400 line-through">$420.00</span></p>
+        </div>
+
       </div>
     </div>
   );
