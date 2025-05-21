@@ -3,7 +3,7 @@ function Navbar(){
         <div className="">
             <div className="navbar w-full fixed right-0 top-0 flex items-center p-8 justify-between">
                 <div className="nav-judul">
-                    <img src="../../public/assets/GameLynx.png" alt="" className="w-30"/>
+                    <img src="../../assets/GameLynx.png" alt="" className="w-30"/>
                 </div>
                 <div className="">
                     <ul className="flex gap-4 text-sm">
