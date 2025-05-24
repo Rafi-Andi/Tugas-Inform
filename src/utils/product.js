@@ -144,7 +144,6 @@ export const displayMouse = [
   }
 ];
 
-
 export const displayLaptop = [
   {
     image: '../../../assets/posterProduct/laptopAsus.png',
@@ -426,7 +425,6 @@ export const displayHeadphone = [
     url: 'https://www.logitech.com/en-us/shop/p/pro-x-wireless-headset.981-000906?sp=1&searchclick=Logitech%20G',
     spesifikasi: {
       dimensi: {
-        panjang: '138 mm',
         lebar: '94 mm',
         tinggi: '195 mm',
         berat: '370 g',
@@ -457,7 +455,7 @@ export const displayHeadphone = [
         'Kompatibel dengan PC, PlayStation 4'
       ],
       fiturTambahan: [
-        'Teknologi Blue VO!CE untuk komunikasi profesional',
+        'Teknologi Blue VOICE untuk komunikasi profesional',
         'DTS Headphone:X 2.0 surround sound',
         'Baterai tahan hingga 20 jam'
       ]
@@ -473,9 +471,10 @@ export const displayHeadphone = [
     url: 'https://www.razer.com/gaming-headsets/razer-blackshark-v2-x/RZ04-03240100-R3U1',
     spesifikasi: {
       dimensi: {
-        diameterDalamEarcup: '63 mm x 43 mm',
-        panjangKabel: '1.3 m',
-        berat: '240 g'
+        lebar: ' 160 mm',
+        tinggi: '200 mm',
+        berat: '240 g',
+        kabelPengisian: '1.8 m'
       },
       material: {
         bantalanTelinga: 'Memory foam bernapas',
@@ -512,7 +511,10 @@ export const displayHeadphone = [
     url: 'https://steelseries.com/gaming-headsets/arctis-nova-4?primaryPlatform=pc',
     spesifikasi: {
       dimensi: {
-        berat: '-'
+        lebar: ' 175 mm',
+        tinggi: '186 mm',
+        berat: '262 g',
+        kabelPengisian: '1.8 m'
       },
       material: {
         bantalanTelinga: 'AirWeave Memory Foam',
@@ -549,7 +551,9 @@ export const displayHeadphone = [
     url: 'https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-iii-wired-gaming-headset?variant=43656365375645',
     spesifikasi: {
       dimensi: {
-        berat: '-'
+        lebar: ' 155 mm',
+        tinggi: '190 mm',
+        berat: '335 g',
       },
       material: {
         bantalanTelinga: 'Memory foam dengan lapisan kulit sintetis premium',
