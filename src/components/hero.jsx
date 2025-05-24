@@ -7,7 +7,7 @@ function Hero(){
                 <div className="grid lg:px-15 px-5 lg:h-screen w-full items-center grid-cols-1 lg:grid-cols-2">
                     <div className="w-full hero-kiri lg:order-1 order-2 mt-6 lg:mt-0">
                         <h1 className="font-bold text-gray-800 text-6xl">Next <span className="text-primary">Gen </span>Tech <span className="text-primary">Accessories</span></h1>
-                        <p className="mt-2 text-xs  text-gray-400 font-md font-semibold md:text-sm w-100">Aksesoris canggih untuk pengalaman digital tanpa batas.
+                        <p className="mt-2 text-xs  text-gray-400 font-md font-semibold md:text-sm w-80 lg:w-100">Aksesoris canggih untuk pengalaman digital tanpa batas.
 Dari laptop stand ergonomis hingga headphone berkelas, semua siap dukung produktivitas dan gaya hidupmu.</p>
                         <div className="flex gap-3 mt-2">
                             <button className="bg-primary px-1.5 py-2 flex items-center gap-2 rounded-md text-white font-semibold hover:bg-white hover:text-black border-[1.5px] hover:border-primary duration-300"> <ShoppingCart size="16"/> Mulai Belanja</button>
