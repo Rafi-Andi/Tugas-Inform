@@ -36,7 +36,7 @@ function Navbar(){
                 </div>
                 
                 <div className="navbar-nav md:block z-10">
-                    <ul className={`transition-all duration-300 z-40 flex gap-6 lg:gap-10 absolute flex-col right-0 ${isOpen ? "top-[50px] right-0 opacity-100" : "top-[69px] right-[-900px] opacity-0"} shadow-lg px-10 py-5 bg-white rounded-b-2xl w-[250px] h-screen lg:h-auto md:static md:flex-row md:w-auto md:top-0 md:py-0 md:px-0 md:bg-transparent text-black md:opacity-100 md:shadow-none`}>
+                    <ul className={`transition-all duration-300 z-40 flex gap-6 lg:gap-10 absolute flex-col right-0 ${isOpen ? "top-[50px] right-0 opacity-100" : "top-[69px] right-[-900px] opacity-0"} shadow-lg px-10 py-5 bg-white rounded-b-2xl w-[250px] h-screen md:h-auto md:static md:flex-row md:w-auto md:top-0 md:py-0 md:px-0 md:bg-transparent text-black md:opacity-100 md:shadow-none`}>
                         <li>
                             <a href="#" onClick={closeMenu} className="text-[16px] font-[500] text-primary hover:text-blue-700 transition-colors">Beranda</a>
                         </li>
