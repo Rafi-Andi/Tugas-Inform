@@ -71,7 +71,7 @@ export const ListProduct = () => {
           Koleksi Produk Kami
         </h1>
       </div>
-      <div className="flex items-center justify-center mt-4 gap-1 bg-black md:gap-4">
+      <div className="flex items-center justify-center mt-4 gap-1 md:gap-4">
         <div onClick={() => setActiveProduct('mouse')} className={` ${activeProduct == 'mouse' ? 'bg-primary text-white' : 'text-gray-300'} border-solid border-gray-300 text-gray-700 border-[1px] px-3 py-1 rounded-2xl hover:bg-primary cursor-pointer hover:text-white transition-all duration-500`}>
           Mouse
         </div>
