@@ -1,5 +1,5 @@
 import { Minimize, ShoppingCart } from "react-feather";
-import { displayMouse, displayHeadphone, displayLaptop, displayKeyboard } from "../component/utils/product";
+import { displayHeadphone, displayKeyboard, displayLaptop, displayMouse } from "../utils/product";
 import { useState, useEffect } from "react";
 
 const ListProductCard = (data) => {

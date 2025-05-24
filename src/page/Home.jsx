@@ -2,7 +2,7 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import Keuntungan from "../fragments/keuntungan";
 import FiturUtama from "../fragments/topFitur";
-import { ListProduct } from "./listProduct";
+import { ListProduct } from "../fragments/listProduct";
 
 function HomePage () {
     return (
