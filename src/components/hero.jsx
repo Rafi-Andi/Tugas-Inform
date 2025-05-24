@@ -64,19 +64,19 @@ Dari laptop stand ergonomis hingga headphone berkelas, semua siap dukung produkt
                         <div className="h-100 absolute right-4 top-15 hidden lg:block">
                             <div className="flex flex-col">
                                 <div className=" bg-white p-2">
-                                    <img src="../../assets/cobafoto.png" alt="" className="w-18 rounded-md"/>
+                                    <img src="../../assets/posterProduct/headphoneLogitech.png" alt="" className="w-18 rounded-md"/>
                                     <h2 className="text-[10px] font-bold text-gray-800 -mb-0.5">MX Logitech</h2>
-                                    <p className="text-[8px] font-semibold text-gray-600">$200.000</p>
+                                    <p className="text-[8px] font-semibold text-gray-600">Rp. 2.072.000</p>
                                 </div>
                                 <div className=" bg-white p-2">
-                                    <img src="../../assets/cobafoto.png" alt="" className="w-18 rounded-md"/>
-                                      <h2 className="text-[10px] font-bold text-gray-800 -mb-0.5">MX Logitech</h2>
-                                    <p className="text-[8px] font-semibold text-gray-600">$200.000</p>
+                                    <img src="../../assets/posterProduct/keyboardKeychron.png" alt="" className="w-18 rounded-md"/>
+                                      <h2 className="text-[10px] font-bold text-gray-800 -mb-0.5">Keychron K8 HE</h2>
+                                    <p className="text-[8px] font-semibold text-gray-600">Rp. 1.610.000</p>
                                 </div>
                                 <div className=" bg-white p-2">
-                                    <img src="../../assets/cobafoto.png" alt="" className="w-18 rounded-md"/>
-                                      <h2 className="text-[10px] font-bold text-gray-800 -mb-0.5">MX Logitech</h2>
-                                    <p className="text-[8px] font-semibold text-gray-600">$200.000</p>
+                                    <img src="../../assets/posterProduct/laptopMSI.png" alt="" className="w-18 rounded-md"/>
+                                      <h2 className="text-[10px] font-bold text-gray-800 -mb-0.5">Sword 16 HX</h2>
+                                    <p className="text-[8px] font-semibold text-gray-600">Rp. 17.425.000</p>
                                 </div>
                             </div>
                         </div>
