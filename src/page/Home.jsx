@@ -3,7 +3,6 @@ import Navbar from "../components/navbar";
 import Keuntungan from "../fragments/keuntungan";
 import FiturUtama from "../fragments/topFitur";
 import { ListProduct } from "../fragments/listProduct";
-import { PopUpProduct } from "../components/popup";
 
 function HomePage () {
     return (
@@ -13,7 +12,6 @@ function HomePage () {
             <Keuntungan/>
             <FiturUtama/>
             <ListProduct />
-            {/* <PopUpProduct /> */}
         </div>
     )
 }
