@@ -3,6 +3,8 @@ import Navbar from "../components/navbar";
 import Keuntungan from "../fragments/keuntungan";
 import FiturUtama from "../fragments/topFitur";
 import { ListProduct } from "../fragments/listProduct";
+import { BestProduct } from "../fragments/bestProduct";
+import { SaleUp } from "../fragments/saleUp";
 
 function HomePage () {
     return (
@@ -12,6 +14,8 @@ function HomePage () {
             <Keuntungan/>
             <FiturUtama/>
             <ListProduct />
+            <BestProduct />
+            <SaleUp />
         </div>
     )
 }
