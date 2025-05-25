@@ -6,7 +6,6 @@ import {
   displayMouse,
 } from "../utils/product";
 import { useState, useEffect } from "react";
-import { PopUpProduct } from "../components/popup";
 
 const ListProductCardMouse = () => {
   const [popup, setPopUp] = useState(false);
