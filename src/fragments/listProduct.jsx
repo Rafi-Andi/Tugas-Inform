@@ -10,6 +10,23 @@ import { useState, useEffect } from "react";
 const ListProductCardMouse = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [kuantitas, setKuantitas] = useState(1);
+
+  const formatToRupiah = (angka) => {
+    if (typeof angka !== "number") return "Rp 0";
+    return angka.toLocaleString("id-ID", {
+      style: "currency",
+      currency: "IDR",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    });
+  };
+
+  const priceNow = (price, amount) => {
+    const priceUpdate = price * amount;
+    console.log(priceUpdate);
+    return priceUpdate;
+  };
 
   return (
     <>
@@ -76,10 +93,42 @@ const ListProductCardMouse = () => {
                   </div>
                 </div>
 
+                <div className="flex mb-5 items-center gap-[1rem]">
+                  <h2 className="">Kuantitas</h2>
+                  <div className="flex gap-[.5rem]">
+                    <button
+                      onClick={() => {
+                        if (kuantitas > 1) {
+                          return setKuantitas(
+                            (prevKuantitas) => prevKuantitas - 1
+                          );
+                        }
+                      }}
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      -
+                    </button>
+                    <div className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4">
+                      {kuantitas}
+                    </div>
+                    <div
+                      onClick={() =>
+                        setKuantitas((prevKuantitas) => prevKuantitas + 1)
+                      }
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
                   <p className="text-lg sm:text-xl font-bold text-blue-600">
-                    {selectedItem.hargaDiskon}
+                    {formatToRupiah(
+                      priceNow(selectedItem.hargaDiskon, kuantitas)
+                    )}
                   </p>
+                </div>
+                <div className="flex gap-2 mt-5">
                   <a
                     href={`https://wa.me/62895347193482?text=permisi, saya ingin membeli barang dengan nama produk ${selectedItem.name} kategori ${selectedItem.kategori}`}
                   >
@@ -87,6 +136,9 @@ const ListProductCardMouse = () => {
                       Pesan Sekarang
                     </button>
                   </a>
+                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
+                    Pesan Sekarang
+                  </button>
                 </div>
               </div>
             </div>
@@ -129,8 +181,10 @@ const ListProductCardMouse = () => {
               {item.name}
             </p>
             <div className="flex gap-2">
-              <p className="font-[500]">{item.hargaDiskon}</p>
-              <p className="text-gray-400 line-through">{item.hargaAsli}</p>
+              <p className="font-[500]">{formatToRupiah(item.hargaDiskon)} </p>
+              <p className="text-gray-400 line-through">
+                {formatToRupiah(item.hargaAsli)}{" "}
+              </p>
             </div>
           </div>
         );
@@ -142,6 +196,24 @@ const ListProductCardMouse = () => {
 const ListProductCardLaptop = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+
+  const [kuantitas, setKuantitas] = useState(1);
+
+  const formatToRupiah = (angka) => {
+    if (typeof angka !== "number") return "Rp 0";
+    return angka.toLocaleString("id-ID", {
+      style: "currency",
+      currency: "IDR",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    });
+  };
+
+  const priceNow = (price, amount) => {
+    const priceUpdate = price * amount;
+    console.log(priceUpdate);
+    return priceUpdate;
+  };
 
   return (
     <>
@@ -209,10 +281,42 @@ const ListProductCardLaptop = () => {
                   </div>
                 </div>
 
+                <div className="flex mb-5 items-center gap-[1rem]">
+                  <h2 className="">Kuantitas</h2>
+                  <div className="flex gap-[.5rem]">
+                    <button
+                      onClick={() => {
+                        if (kuantitas > 1) {
+                          return setKuantitas(
+                            (prevKuantitas) => prevKuantitas - 1
+                          );
+                        }
+                      }}
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      -
+                    </button>
+                    <div className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4">
+                      {kuantitas}
+                    </div>
+                    <div
+                      onClick={() =>
+                        setKuantitas((prevKuantitas) => prevKuantitas + 1)
+                      }
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
                   <p className="text-lg sm:text-xl font-bold text-blue-600">
-                    {selectedItem.hargaDiskon}
+                    {formatToRupiah(
+                      priceNow(selectedItem.hargaDiskon, kuantitas)
+                    )}
                   </p>
+                </div>
+                <div className="flex gap-2 mt-5">
                   <a
                     href={`https://wa.me/62895347193482?text=permisi, saya ingin membeli barang dengan nama produk ${selectedItem.name} kategori ${selectedItem.kategori}`}
                   >
@@ -220,6 +324,9 @@ const ListProductCardLaptop = () => {
                       Pesan Sekarang
                     </button>
                   </a>
+                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
+                    Pesan Sekarang
+                  </button>
                 </div>
               </div>
             </div>
@@ -275,6 +382,23 @@ const ListProductCardLaptop = () => {
 const ListProductCardKeyboard = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [kuantitas, setKuantitas] = useState(1);
+
+  const formatToRupiah = (angka) => {
+    if (typeof angka !== "number") return "Rp 0";
+    return angka.toLocaleString("id-ID", {
+      style: "currency",
+      currency: "IDR",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    });
+  };
+
+  const priceNow = (price, amount) => {
+    const priceUpdate = price * amount;
+    console.log(priceUpdate);
+    return priceUpdate;
+  };
   return (
     <>
       {popup && (
@@ -341,10 +465,42 @@ const ListProductCardKeyboard = () => {
                   </div>
                 </div>
 
+                 <div className="flex mb-5 items-center gap-[1rem]">
+                  <h2 className="">Kuantitas</h2>
+                  <div className="flex gap-[.5rem]">
+                    <button
+                      onClick={() => {
+                        if (kuantitas > 1) {
+                          return setKuantitas(
+                            (prevKuantitas) => prevKuantitas - 1
+                          );
+                        }
+                      }}
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      -
+                    </button>
+                    <div className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4">
+                      {kuantitas}
+                    </div>
+                    <div
+                      onClick={() =>
+                        setKuantitas((prevKuantitas) => prevKuantitas + 1)
+                      }
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
                   <p className="text-lg sm:text-xl font-bold text-blue-600">
-                    {selectedItem.hargaDiskon}
+                    {formatToRupiah(
+                      priceNow(selectedItem.hargaDiskon, kuantitas)
+                    )}
                   </p>
+                </div>
+                <div className="flex gap-2 mt-5">
                   <a
                     href={`https://wa.me/62895347193482?text=permisi, saya ingin membeli barang dengan nama produk ${selectedItem.name} kategori ${selectedItem.kategori}`}
                   >
@@ -352,6 +508,9 @@ const ListProductCardKeyboard = () => {
                       Pesan Sekarang
                     </button>
                   </a>
+                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
+                    Pesan Sekarang
+                  </button>
                 </div>
               </div>
             </div>
@@ -406,6 +565,23 @@ const ListProductCardKeyboard = () => {
 const ListProductCardHeadphone = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [kuantitas, setKuantitas] = useState(1);
+
+  const formatToRupiah = (angka) => {
+    if (typeof angka !== "number") return "Rp 0";
+    return angka.toLocaleString("id-ID", {
+      style: "currency",
+      currency: "IDR",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    });
+  };
+
+  const priceNow = (price, amount) => {
+    const priceUpdate = price * amount;
+    console.log(priceUpdate);
+    return priceUpdate;
+  };
 
   return (
     <>
@@ -473,10 +649,42 @@ const ListProductCardHeadphone = () => {
                   </div>
                 </div>
 
+                 <div className="flex mb-5 items-center gap-[1rem]">
+                  <h2 className="">Kuantitas</h2>
+                  <div className="flex gap-[.5rem]">
+                    <button
+                      onClick={() => {
+                        if (kuantitas > 1) {
+                          return setKuantitas(
+                            (prevKuantitas) => prevKuantitas - 1
+                          );
+                        }
+                      }}
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      -
+                    </button>
+                    <div className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4">
+                      {kuantitas}
+                    </div>
+                    <div
+                      onClick={() =>
+                        setKuantitas((prevKuantitas) => prevKuantitas + 1)
+                      }
+                      className="border-solid cursor-pointer border-gray-300 border-[1px] py-1 px-4"
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
                   <p className="text-lg sm:text-xl font-bold text-blue-600">
-                    {selectedItem.hargaDiskon}
+                    {formatToRupiah(
+                      priceNow(selectedItem.hargaDiskon, kuantitas)
+                    )}
                   </p>
+                </div>
+                <div className="flex gap-2 mt-5">
                   <a
                     href={`https://wa.me/62895347193482?text=permisi, saya ingin membeli barang dengan nama produk ${selectedItem.name} kategori ${selectedItem.kategori}`}
                   >
@@ -484,6 +692,9 @@ const ListProductCardHeadphone = () => {
                       Pesan Sekarang
                     </button>
                   </a>
+                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
+                    Pesan Sekarang
+                  </button>
                 </div>
               </div>
             </div>
