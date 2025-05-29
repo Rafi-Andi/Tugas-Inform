@@ -5,12 +5,14 @@ import {
   displayLaptop,
   displayMouse,
 } from "../utils/product";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { KeranjangContext } from "../context/keranjangContext";
 
 const ListProductCardMouse = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [kuantitas, setKuantitas] = useState(1);
+  const { data, setData } = useContext(KeranjangContext);
 
   const formatToRupiah = (angka) => {
     if (typeof angka !== "number") return "Rp 0";
@@ -24,7 +26,6 @@ const ListProductCardMouse = () => {
 
   const priceNow = (price, amount) => {
     const priceUpdate = price * amount;
-    console.log(priceUpdate);
     return priceUpdate;
   };
 
@@ -136,8 +137,25 @@ const ListProductCardMouse = () => {
                       Pesan Sekarang
                     </button>
                   </a>
-                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
-                    Pesan Sekarang
+                  <button
+                    onClick={() => {
+                      setData((prevData) => [
+                        ...prevData,
+                        {
+                          image: selectedItem.image,
+                          name: selectedItem.name,
+                          priceTotal: formatToRupiah(
+                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          ),
+                          kuantitas: kuantitas,
+                        },
+                      ]);
+                      setPopUp(false)
+                    }
+                  }
+                    className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
+                  >
+                    Keranjang
                   </button>
                 </div>
               </div>
@@ -196,7 +214,7 @@ const ListProductCardMouse = () => {
 const ListProductCardLaptop = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
-
+    const { data, setData } = useContext(KeranjangContext);
   const [kuantitas, setKuantitas] = useState(1);
 
   const formatToRupiah = (angka) => {
@@ -324,8 +342,25 @@ const ListProductCardLaptop = () => {
                       Pesan Sekarang
                     </button>
                   </a>
-                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
-                    Pesan Sekarang
+                  <button
+                    onClick={() => {
+                      setData((prevData) => [
+                        ...prevData,
+                        {
+                          image: selectedItem.image,
+                          name: selectedItem.name,
+                          priceTotal: formatToRupiah(
+                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          ),
+                          kuantitas: kuantitas,
+                        },
+                      ]);
+                      setPopUp(false)
+                    }
+                  }
+                    className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
+                  >
+                    Keranjang
                   </button>
                 </div>
               </div>
@@ -382,6 +417,7 @@ const ListProductCardLaptop = () => {
 const ListProductCardKeyboard = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+    const { data, setData } = useContext(KeranjangContext);
   const [kuantitas, setKuantitas] = useState(1);
 
   const formatToRupiah = (angka) => {
@@ -465,7 +501,7 @@ const ListProductCardKeyboard = () => {
                   </div>
                 </div>
 
-                 <div className="flex mb-5 items-center gap-[1rem]">
+                <div className="flex mb-5 items-center gap-[1rem]">
                   <h2 className="">Kuantitas</h2>
                   <div className="flex gap-[.5rem]">
                     <button
@@ -508,8 +544,25 @@ const ListProductCardKeyboard = () => {
                       Pesan Sekarang
                     </button>
                   </a>
-                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
-                    Pesan Sekarang
+                  <button
+                    onClick={() => {
+                      setData((prevData) => [
+                        ...prevData,
+                        {
+                          image: selectedItem.image,
+                          name: selectedItem.name,
+                          priceTotal: formatToRupiah(
+                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          ),
+                          kuantitas: kuantitas,
+                        },
+                      ]);
+                      setPopUp(false)
+                    }
+                  }
+                    className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
+                  >
+                    Keranjang
                   </button>
                 </div>
               </div>
@@ -565,6 +618,7 @@ const ListProductCardKeyboard = () => {
 const ListProductCardHeadphone = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+    const { data, setData } = useContext(KeranjangContext);
   const [kuantitas, setKuantitas] = useState(1);
 
   const formatToRupiah = (angka) => {
@@ -649,7 +703,7 @@ const ListProductCardHeadphone = () => {
                   </div>
                 </div>
 
-                 <div className="flex mb-5 items-center gap-[1rem]">
+                <div className="flex mb-5 items-center gap-[1rem]">
                   <h2 className="">Kuantitas</h2>
                   <div className="flex gap-[.5rem]">
                     <button
@@ -692,8 +746,25 @@ const ListProductCardHeadphone = () => {
                       Pesan Sekarang
                     </button>
                   </a>
-                  <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto">
-                    Pesan Sekarang
+                  <button
+                    onClick={() => {
+                      setData((prevData) => [
+                        ...prevData,
+                        {
+                          image: selectedItem.image,
+                          name: selectedItem.name,
+                          priceTotal: formatToRupiah(
+                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          ),
+                          kuantitas: kuantitas,
+                        },
+                      ]);
+                      setPopUp(false)
+                    }
+                  }
+                    className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
+                  >
+                    Keranjang
                   </button>
                 </div>
               </div>
