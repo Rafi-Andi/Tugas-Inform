@@ -5,6 +5,7 @@ import FiturUtama from "../fragments/topFitur";
 import { ListProduct } from "../fragments/listProduct";
 import { BestProduct } from "../fragments/bestProduct";
 import { SaleUp } from "../fragments/saleUp";
+import { Footer } from "../fragments/footer";
 
 function HomePage () {
     return (
@@ -16,6 +17,7 @@ function HomePage () {
             <ListProduct />
             <BestProduct />
             <SaleUp />
+            <Footer />
         </div>
     )
 }

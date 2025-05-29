@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { Phone, ShoppingCart, Menu, X } from "react-feather";
 import { KeranjangContext } from "../context/keranjangContext";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -95,7 +96,7 @@ function Navbar() {
                 <Phone size="16px" />
                 Kontak
               </button>
-              <button className="relative flex items-center justify-center gap-2 bg-white text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-colors w-full">
+              <Link to="/chart" className="relative flex items-center justify-center gap-2 bg-white text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-colors w-full">
                 <div className="relative">
                   <ShoppingCart size="16px" />
                 </div>
@@ -103,7 +104,7 @@ function Navbar() {
                 <div className="absolute -top-1 -right-2 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center">
                   {data.length}
                 </div>
-              </button>
+              </Link>
             </div>
           </ul>
         </div>
@@ -113,12 +114,12 @@ function Navbar() {
             <button className="flex items-center justify-center bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
               <Phone size="20px" color="#3078d1" />
             </button>
-            <button className="relative flex items-center justify-center bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
+            <Link to='/chart' className="relative flex items-center justify-center bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
               <ShoppingCart size="20px" color="#3078d1" />
               <div className="absolute -top-1 -right-2 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center">
                 {data.length}
               </div>
-            </button>
+            </Link>
           </div>
 
           <div
