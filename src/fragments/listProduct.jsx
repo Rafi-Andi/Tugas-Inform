@@ -7,6 +7,7 @@ import {
 } from "../utils/product";
 import { useState, useEffect, useContext } from "react";
 import { KeranjangContext } from "../context/keranjangContext";
+import { nanoid } from "nanoid";
 
 const ListProductCardMouse = () => {
   const [popup, setPopUp] = useState(false);
@@ -142,17 +143,18 @@ const ListProductCardMouse = () => {
                       setData((prevData) => [
                         ...prevData,
                         {
+                          id: nanoid(),
                           image: selectedItem.image,
                           name: selectedItem.name,
-                          priceTotal: formatToRupiah(
-                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          priceTotal: priceNow(
+                            selectedItem.hargaDiskon,
+                            kuantitas
                           ),
                           kuantitas: kuantitas,
                         },
                       ]);
-                      setPopUp(false)
-                    }
-                  }
+                      setPopUp(false);
+                    }}
                     className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
                   >
                     Keranjang
@@ -214,7 +216,7 @@ const ListProductCardMouse = () => {
 const ListProductCardLaptop = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
-    const { data, setData } = useContext(KeranjangContext);
+  const { data, setData } = useContext(KeranjangContext);
   const [kuantitas, setKuantitas] = useState(1);
 
   const formatToRupiah = (angka) => {
@@ -347,17 +349,18 @@ const ListProductCardLaptop = () => {
                       setData((prevData) => [
                         ...prevData,
                         {
+                          id: nanoid(),
                           image: selectedItem.image,
                           name: selectedItem.name,
-                          priceTotal: formatToRupiah(
-                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          priceTotal: priceNow(
+                            selectedItem.hargaDiskon,
+                            kuantitas
                           ),
                           kuantitas: kuantitas,
                         },
                       ]);
-                      setPopUp(false)
-                    }
-                  }
+                      setPopUp(false);
+                    }}
                     className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
                   >
                     Keranjang
@@ -404,8 +407,10 @@ const ListProductCardLaptop = () => {
               {item.name}
             </p>
             <div className="flex gap-2">
-              <p className="font-[500]">{item.hargaDiskon}</p>
-              <p className="text-gray-400 line-through">{item.hargaAsli}</p>
+              <p className="font-[500]">{formatToRupiah(item.hargaDiskon)}</p>
+              <p className="text-gray-400 line-through">
+                {formatToRupiah(item.hargaAsli)}
+              </p>
             </div>
           </div>
         );
@@ -417,7 +422,7 @@ const ListProductCardLaptop = () => {
 const ListProductCardKeyboard = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
-    const { data, setData } = useContext(KeranjangContext);
+  const { data, setData } = useContext(KeranjangContext);
   const [kuantitas, setKuantitas] = useState(1);
 
   const formatToRupiah = (angka) => {
@@ -549,17 +554,18 @@ const ListProductCardKeyboard = () => {
                       setData((prevData) => [
                         ...prevData,
                         {
+                          id: nanoid(),
                           image: selectedItem.image,
                           name: selectedItem.name,
-                          priceTotal: formatToRupiah(
-                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          priceTotal: priceNow(
+                            selectedItem.hargaDiskon,
+                            kuantitas
                           ),
                           kuantitas: kuantitas,
                         },
                       ]);
-                      setPopUp(false)
-                    }
-                  }
+                      setPopUp(false);
+                    }}
                     className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
                   >
                     Keranjang
@@ -605,8 +611,10 @@ const ListProductCardKeyboard = () => {
               {item.name}
             </p>
             <div className="flex gap-2">
-              <p className="font-[500]">{item.hargaDiskon}</p>
-              <p className="text-gray-400 line-through">{item.hargaAsli}</p>
+              <p className="font-[500]">{formatToRupiah(item.hargaDiskon)}</p>
+              <p className="text-gray-400 line-through">
+                {formatToRupiah(item.hargaAsli)}
+              </p>
             </div>
           </div>
         );
@@ -618,7 +626,7 @@ const ListProductCardKeyboard = () => {
 const ListProductCardHeadphone = () => {
   const [popup, setPopUp] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
-    const { data, setData } = useContext(KeranjangContext);
+  const { data, setData } = useContext(KeranjangContext);
   const [kuantitas, setKuantitas] = useState(1);
 
   const formatToRupiah = (angka) => {
@@ -751,17 +759,18 @@ const ListProductCardHeadphone = () => {
                       setData((prevData) => [
                         ...prevData,
                         {
+                          id: nanoid(),
                           image: selectedItem.image,
                           name: selectedItem.name,
-                          priceTotal: formatToRupiah(
-                            priceNow(selectedItem.hargaDiskon, kuantitas)
+                          priceTotal: priceNow(
+                            selectedItem.hargaDiskon,
+                            kuantitas
                           ),
                           kuantitas: kuantitas,
                         },
                       ]);
-                      setPopUp(false)
-                    }
-                  }
+                      setPopUp(false);
+                    }}
                     className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-xl font-semibold shadow text-sm sm:text-base w-full sm:w-auto"
                   >
                     Keranjang
@@ -808,8 +817,10 @@ const ListProductCardHeadphone = () => {
               {item.name}
             </p>
             <div className="flex gap-2">
-              <p className="font-[500]">{item.hargaDiskon}</p>
-              <p className="text-gray-400 line-through">{item.hargaAsli}</p>
+              <p className="font-[500]">{formatToRupiah(item.hargaDiskon)}</p>
+              <p className="text-gray-400 line-through">
+                {formatToRupiah(item.hargaAsli)}
+              </p>
             </div>
           </div>
         );

@@ -5,7 +5,7 @@ export const KeranjangContext = createContext();
 export const KeranjangContextProvider = ({ children }) => {
   const [data, setData] = useState(() => {
     try {
-      const stored = localStorage.getItem("keranjang");
+      const stored = localStorage.getItem("shoping");
       return stored ? JSON.parse(stored) : [];
     } catch (error) {
       console.error(error);
@@ -14,7 +14,7 @@ export const KeranjangContextProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    localStorage.setItem("keranjang", JSON.stringify(data));
+    localStorage.setItem("shoping", JSON.stringify(data));
   }, [data]);
 
   return (
