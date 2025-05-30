@@ -1,8 +1,8 @@
 export const SaleUp = () => {
     return(
     // <div className="h-screen bg-red-600">
-        <div className="flex flex-col-reverse lg:flex-row bg-gradient-to-r from-white to-blue-200 w-11/12 lg:w-3/4 mx-auto my-5 rounded-4xl shadow-lg ring-1 ring-blue-500/50 p-8 lg:p-0 lg:pb-2">
-            <div className="w-full lg:w-1/2 text-blue-800 flex flex-col lg:ml-20 lg:my-auto items-center lg:items-start text-center lg:text-left">
+        <div className="flex flex-col-reverse lg:flex-row bg-gradient-to-r from-white to-blue-200 w-11/12 mx-auto my-5 rounded-2xl   p-8 lg:p-0 lg:pb-2">
+            <div className="w-full lg:w-1/2 text-primary flex flex-col lg:ml-20 lg:my-auto items-center lg:items-start text-center lg:text-left">
                 
               <div className="mb-2 md:mb-3 self-center lg:self-start">
               <span className="inline-flex items-center bg-gradient-to-r from-pink-500 to-orange-400 text-white text-xs sm:text-sm font-bold px-3 py-1.5 rounded-full shadow">
@@ -15,7 +15,7 @@ export const SaleUp = () => {
                 <p className="text-sm lg:text-base text-gray-600 mt-3 mb-4">Kualitas Premium<span className="text-gray-400 mx-1">•</span> Audio Jernih <span className="text-gray-400 mx-1">•</span> Kenyamanan Maksimal</p>
                 
                 <div className="flex flex-row gap-10 mt-4">
-                <button className="flex mt-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 w-fit p-4 rounded-lg hover:from-blue-500 to-blue-800 transition">Beli Sekarang<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></button>
+                <button className="flex mt-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-400 w-fit p-4 rounded-lg hover:from-blue-500 to-blue-800 transition">Beli Sekarang<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></button>
                 <button className="mt-3 text-sm font-semibold text-blue-700 bg-white w-fit p-4 border-2 border-blue-700 rounded-lg hover:bg-gray-300 transition">Lihat Detail</button>
                 </div>
 
