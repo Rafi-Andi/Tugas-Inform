@@ -3,6 +3,8 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import TestimonialCard from "../components/tetimoniCard"
 import { Users } from "react-feather"
+import TestiKanan from "./TestimonialKiri"
+import TestiKiri from "./TestimonialKanan"
 
 const animation = { duration: 15000, easing: (t) => t }
 
@@ -31,13 +33,13 @@ function Testimonial() {
     },
     },
     created(s) {
-      s.moveToIdx(5, true, animation)
+      s.moveToIdx(-5, true, animation)
     },
     updated(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation)
+      s.moveToIdx(s.track.details.abs - 5, true, animation)
     },
     animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation)
+      s.moveToIdx(s.track.details.abs - 5, true, animation)
     },
   })
 
@@ -45,7 +47,7 @@ function Testimonial() {
         <div className="testimonial-container py-20 px-5 lg:px-20 ">
             <div className="text-center mb-16 flex items-center flex-col">
                 <p className="flex items-center gap-1 bg-primary p-1 py-1.5 text-xs rounded-sm font-semibold w-fit text-white">
-                    <Users size="14" /> Fitur Utama
+                    <Users size="14" /> Testimoni
                 </p>
                 <h2 className="text-4xl font-bold mb-6 text-primary">
                     Apa Kata Mereka?
@@ -57,63 +59,8 @@ function Testimonial() {
 
 
             <div className="w-full   h-fit">
-                <div ref={sliderRef} className="keen-slider" >
-                    
-                    <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                    <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                     <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                     <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                    <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                     <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                     <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                    <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                     <div className="keen-slider__slide"><TestimonialCard
-                        name="Randi Permana"
-                        role="Web Developer"
-                        message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-                        avatar="https://i.pravatar.cc/150?img=3"/>
-                    </div>
-                </div>
+               <TestiKanan/>
+               <TestiKiri/>
             </div>
         </div>
 

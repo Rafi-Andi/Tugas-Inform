@@ -1,4 +1,4 @@
-import { Star } from "react-feather";
+import { Award, Star } from "react-feather";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,7 +11,7 @@ export const BestProduct = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 w-full">
         <div>
            <p className="flex items-center gap-1 bg-primary p-1 py-1.5 text-xs rounded-sm font-semibold w-fit text-white">
-                    <Star size="14" /> Produk Terbaik
+                    <Award size="14" /> Produk Terbaik
             </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
            Produk Terbaik Untuk<br />
