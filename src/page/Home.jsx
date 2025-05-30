@@ -6,6 +6,7 @@ import { ListProduct } from "../fragments/listProduct";
 import { BestProduct } from "../fragments/bestProduct";
 import { SaleUp } from "../fragments/saleUp";
 import { Footer } from "../fragments/footer";
+import Testimonial from "../fragments/testi";
 
 function HomePage () {
     return (
@@ -16,6 +17,7 @@ function HomePage () {
             <FiturUtama/>
             <ListProduct />
             <BestProduct />
+            <Testimonial/>
             <SaleUp />
             <Footer />
         </div>
