@@ -38,13 +38,14 @@ function Navbar() {
       }`}
     >
       <div className="container-navbar flex justify-between items-center">
-        <div className="nav-logo flex items-center gap-2">
+        <a href="#beranda"><div className="nav-logo flex items-center gap-2">
           <img
             src="../../assets/GameLynx.png"
             alt="GameLynx Logo"
             className="w-30"
           />
         </div>
+        </a>
 
         <div className="navbar-nav md:block z-10">
           <ul
@@ -56,25 +57,16 @@ function Navbar() {
           >
             <li>
               <a
-                href="#"
+                href="#beranda"
                 onClick={closeMenu}
-                className="text-[16px] font-[500] text-primary hover:text-blue-700 transition-colors"
+                className="text-[16px] font-[500] hover:text-primary transition-colors"
               >
                 Beranda
               </a>
             </li>
             <li>
               <a
-                href="#"
-                onClick={closeMenu}
-                className="text-[16px] font-[500] hover:text-primary transition-colors"
-              >
-                Tentang
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
+                href="#produk"
                 onClick={closeMenu}
                 className="text-[16px] font-[500] hover:text-primary transition-colors"
               >
@@ -83,11 +75,29 @@ function Navbar() {
             </li>
             <li>
               <a
+                href="#testimoni"
+                onClick={closeMenu}
+                className="text-[16px] font-[500] hover:text-primary transition-colors"
+              >
+                Testimoni
+              </a>
+            </li>
+            <li>
+              <a
+                href="#diskon"
+                onClick={closeMenu}
+                className="text-[16px] font-[500] hover:text-primary transition-colors"
+              >
+                Diskon
+              </a>
+            </li>
+             <li>
+              <a
                 href="#"
                 onClick={closeMenu}
                 className="text-[16px] font-[500] hover:text-primary transition-colors"
               >
-                Toko
+                Kontak
               </a>
             </li>
 

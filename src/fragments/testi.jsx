@@ -44,7 +44,7 @@ function Testimonial() {
   })
 
     return (
-        <div className="testimonial-container py-20 px-5 lg:px-20 ">
+        <div className="testimonial-container py-20 px-5 lg:px-20 " id="testimoni">
             <div className="text-center mb-16 flex items-center flex-col">
                 <p className="flex items-center gap-1 bg-primary p-1 py-1.5 text-xs rounded-sm font-semibold w-fit text-white">
                     <Users size="14" /> Testimoni

@@ -846,7 +846,7 @@ export const ListProduct = () => {
   };
 
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px]" id="produk">
       <div className="">
         <div className="flex justify-center">
           <p className="flex items-center gap-1 bg-primary p-1 py-1.5 text-xs rounded-sm font-semibold w-fit text-white">

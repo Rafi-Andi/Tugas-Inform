@@ -1,7 +1,7 @@
 export const SaleUp = () => {
     return(
     // <div className="h-screen bg-red-600">
-        <div className="flex flex-col-reverse lg:flex-row bg-gradient-to-r from-white to-blue-200 w-11/12 mx-auto my-5 rounded-2xl   p-8 lg:p-0 lg:pb-2">
+        <div className="flex flex-col-reverse lg:flex-row bg-gradient-to-r from-white to-blue-200 w-11/12 mx-auto my-5 rounded-2xl   p-8 lg:p-0 lg:pb-2" id="diskon">
             <div className="w-full lg:w-1/2 text-primary flex flex-col lg:ml-20 lg:my-auto items-center lg:items-start text-center lg:text-left">
                 
               <div className="mb-2 md:mb-3 self-center lg:self-start">

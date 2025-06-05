@@ -40,76 +40,40 @@ function TestiKiri() {
 
   return (
     <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide">
+<div className="keen-slider__slide">
         <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
+          name="Diana Lestari"
+          role="Penikmat Musik & Editor Video"
+          message="Beli headphone ini awalnya untuk gaming, tapi ternyata kualitas suaranya untuk dengerin musik luar biasa! Detail vokal dan instrumen terdengar jernih, bass-nya juga solid tapi nggak berlebihan. Sangat membantu pas lagi editing video."
+          // Avatar perempuan
+          avatar="https://i.pravatar.cc/150?img=47"
         />
       </div>
       <div className="keen-slider__slide">
         <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
+          name="Hendra Gunawan"
+          role="Orang Tua"
+          message="Pesan mouse gaming untuk hadiah ulang tahun anak saya. Proses checkout mudah, pengiriman super cepat. Kualitasnya kokoh, kelihatannya awet untuk pemakaian anak-anak. Anak saya senang sekali, katanya jadi makin jago mainnya. Terima kasih!"
+          // Avatar laki-laki
+          avatar="https://i.pravatar.cc/150?img=60"
         />
       </div>
       <div className="keen-slider__slide">
         <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
+          name="Siti Aisyah"
+          role="Mahasiswi & Mobile Gamer"
+          message="Headset wireless-nya favoritku! Baterainya tahan lama, pas banget buat maraton kelas online seharian. Koneksi Bluetooth stabil, dipakai buat dengerin musik di kereta atau main Mobile Legends nggak pernah putus-putus. Mantap!"
+          // Avatar perempuan
+          avatar="https://i.pravatar.cc/150?img=44"
         />
       </div>
-      <div className="keen-slider__slide">
-        <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
-        />
-      </div>
-      <div className="keen-slider__slide">
-        <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
-        />
-      </div>
-      <div className="keen-slider__slide">
-        <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
-        />
-      </div>
-      <div className="keen-slider__slide">
-        <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
-        />
-      </div>
-      <div className="keen-slider__slide">
-        <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
-        />
-      </div>
-      <div className="keen-slider__slide">
-        <TestimonialCard
-          name="Randi Permana"
-          role="Web Developer"
-          message="Website ini sangat membantu saya dalam mengelola usaha kecil saya. UI-nya simpel dan responsif!"
-          avatar="https://i.pravatar.cc/150?img=3"
+      <div className="keen-slider__slide py-2">
+       <TestimonialCard
+          name="Agung Prasetyo"
+          role="System Administrator"
+          message="Sudah pakai mouse ini lebih dari 6 bulan untuk kerja dan main. Build quality-nya juara, masih terasa solid sampai sekarang. Klik-nya empuk dan presisi, nyaman dipakai berjam-jam. Investasi jangka panjang yang tidak mengecewakan."
+          // Avatar laki-laki
+          avatar="https://i.pravatar.cc/150?img=59"
         />
       </div>
     </div>

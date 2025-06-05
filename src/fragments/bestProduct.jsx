@@ -26,7 +26,7 @@ export const BestProduct = () => {
         </div>
 
         <div className="relative">
-          <div className="bg-blue-100 rounded-3xl p-8">
+          <div className="bg-gray-200 rounded-3xl p-8">
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation
@@ -35,10 +35,16 @@ export const BestProduct = () => {
                 className="w-full"
             >
               <SwiperSlide>
-                <img src="../../assets/headphoneLogitech.webp" alt="" className="w-60 md:w-72 mx-auto" />
+                <img src="../../assets/7.png" alt="" className="w-60 md:w-72 mx-auto" />
               </SwiperSlide>
-              <SwiperSlide>
-                <img src="../../assets/HeroFoto.png" alt="" className="w-60 md:w-72 mx-auto" />
+               <SwiperSlide>
+                <img src="../../assets/8.png" alt="" className="w-60 md:w-72 mx-auto" />
+              </SwiperSlide>
+               <SwiperSlide>
+                <img src="../../assets/9.png" alt="" className="w-60 md:w-72 mx-auto" />
+              </SwiperSlide>
+               <SwiperSlide>
+                <img src="../../assets/10.png" alt="" className="w-60 md:w-72 mx-auto" />
               </SwiperSlide>
            </Swiper>
           </div>

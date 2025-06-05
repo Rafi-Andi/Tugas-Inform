@@ -10,7 +10,7 @@ export const Footer = () => {
             className="w-32 mb-4"
             />
 
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi aliquid voluptas maxime nostrum itaque non consequuntur laborum, ducimus excepturi harum! Accusantium qui non iusto sequi dolorum autem beatae corporis?</p>
+            <p className="text-gray-600 text-sm leading-relaxed mb-6"> Tingkatkan pengalaman gaming Anda dengan aksesoris berkualitas premium dari kami. Garansi resmi dan layanan pelanggan terbaik. Jelajahi koleksi lengkap kami sekarang!"</p>
             
             <div className="flex space-x-4">
             <a href="#" className="text-gray-500 hover:text-blue-600">
@@ -36,26 +36,26 @@ export const Footer = () => {
             <div className="w-full md:w-auto lg:w-1/4 text-center lg:text-left">
             <h3 className="text-lg font-semibold text-gray-700 mb-5">Cari Produk</h3>
             <ul className="space-y-3">
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Mouse</a></li>
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Keyboard</a></li>
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Laptop</a></li>
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Headphone</a></li>
+            <li><a href="#produk" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Mouse</a></li>
+            <li><a href="#produk" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Keyboard</a></li>
+            <li><a href="#produk" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Laptop</a></li>
+            <li><a href="#produk" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Headphone</a></li>
             </ul>
             </div>
 
             <div className="w-full md:w-auto lg:w-1/4 text-center lg:text-left">
-            <h3 className="text-lg font-semibold text-gray-700 mb-5 ">Informasi GameLynx</h3>
+            <h3 className="text-lg font-semibold text-gray-700 mb-5 ">Navigasi</h3>
             <ul className="space-y-3">
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Fitur Utama</a></li>
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Produk Terbaik</a></li>
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Penawaran Terbatas</a></li>
+            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Beranda</a></li>
+            <li><a href="#produk" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Produk</a></li>
+            <li><a href="#testimoni" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Testimoni</a></li>
+            <li><a href="#diskon" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Diskon</a></li>
             </ul>
             </div>
 
             <div className="w-full md:w-auto lg:w-1/4 text-center lg:text-left">
             <h3 className="text-lg font-semibold text-gray-700 mb-5">Dapatkan Bantuan</h3>
             <ul className="space-y-3">
-            <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Tentang Kami</a></li>
             <li><a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">Kontak Kami</a></li>
             </ul>
             </div>
@@ -63,7 +63,7 @@ export const Footer = () => {
             </div>
             <div className="text-center py-6 max-w-6xl mx-auto w-11/12 lg:w-full">
                 <p className="text-xs text-gray-500">
-                    &copy; {new Date().getFullYear()} GameLynx. All Rights Reserved.
+                    &copy; 2025 GameLynx. All Rights Reserved.
                 </p>
             </div>
 

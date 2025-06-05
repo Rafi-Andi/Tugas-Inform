@@ -2,7 +2,7 @@ import { AlertCircle, Headphones, Shield, ShoppingCart } from "react-feather"
 
 function Hero(){
     return (
-        <div className="">
+        <div className="" id="beranda">
             <div className="hero-container lg:p-10 mt-25 lg:mt-0">
                 <div className="grid lg:px-15 px-5 lg:h-screen w-full items-center grid-cols-1 lg:grid-cols-2">
                     <div className="w-full hero-kiri lg:order-1 order-2 mt-6 lg:mt-0">
@@ -50,14 +50,14 @@ Dari laptop stand ergonomis hingga headphone berkelas, semua siap dukung produkt
                         <div className="absolute right-0 bottom-0 lg:right-25 lg:bottom-10 ">
                             <div className="bg-white shadow-lg w-50 p-2 rounded-lg">
                                 <div className="flex">
-                                    <img src="../../assets/avatar.avif" alt="" className="w-10 rounded-[50px]"/>
+                                    <img src="https://i.pravatar.cc/150?img=5" alt="" className="w-10 rounded-[50px]"/>
                                     <div className="flex flex-col">
-                                        <h1 className="text-sm font-semibold text-gray-800">Randi Permana</h1>
+                                        <h1 className="text-sm font-semibold text-gray-800">Anisa Putri</h1>
                                         <p className="text-xs">⭐⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
                                 <div className="mt-2">
-                                    <p className="text-xs text-gray-700 leading-3.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, exercitationem.</p>
+                                    <p className="text-xs text-gray-700 leading-3.5">Beli mouse wireless buat kerja, eh dipakai nge-game malah jempolan! Akurat, responsif, dan nyaman banget.</p>
                                 </div>
                             </div>
                         </div>
