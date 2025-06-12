@@ -33,3 +33,8 @@ Anggota Kelompok :
 2. Moch Rafi Andi Prayitno / 08 
 3. M Rifqi Maulana / 16
 4. Randi Permana Shidiq / 22
+
+Link Deploy & Github :
+
+- https://gamelynx.vercel.app/
+- https://github.com/Rafi-Andi/Tugas-Inform
