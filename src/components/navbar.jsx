@@ -93,7 +93,7 @@ function Navbar() {
             </li>
              <li>
               <a
-                href="#"
+                href="#footer"
                 onClick={closeMenu}
                 className="text-[16px] font-[500] hover:text-primary transition-colors"
               >
@@ -102,10 +102,10 @@ function Navbar() {
             </li>
 
             <div className="button md:hidden flex flex-col gap-3 mt-4">
-              <button className="cursor-pointer flex items-center justify-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors w-full">
+              <a href="https://wa.me/628993903149" className="cursor-pointer flex items-center justify-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors w-full">
                 <Phone size="16px" />
                 Kontak
-              </button>
+              </a>
               <Link to="/chart" className="relative flex items-center justify-center gap-2 bg-white text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-colors w-full">
                 <div className="relative">
                   <ShoppingCart size="16px" />
@@ -121,9 +121,9 @@ function Navbar() {
 
         <div className="navbar-button flex items-center gap-[15px]">
           <div className="button hidden md:flex gap-2">
-            <button className="flex items-center justify-center bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
+            <a href="https://wa.me/628993903149" className="flex items-center justify-center bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
               <Phone size="20px" color="#3078d1" />
-            </button>
+            </a>
             <Link to='/chart' className="relative flex items-center justify-center bg-gray-200 p-3 rounded-full hover:bg-gray-300 transition-colors">
               <ShoppingCart size="20px" color="#3078d1" />
               <div className="absolute -top-1 -right-2 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center">

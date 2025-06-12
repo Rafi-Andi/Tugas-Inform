@@ -2,7 +2,7 @@ import { Star, ShoppingCart, AlertCircle } from "react-feather";
 
 function FiturUtama() {
   return (
-    <div className="mt-12">
+    <div className="mt-12" id="fiturHeadphone">
       <div className="">
         <div className="flex justify-center">
           <p className="flex items-center gap-1 bg-primary p-1 py-1.5 text-xs rounded-sm font-semibold w-fit text-white">
@@ -50,8 +50,8 @@ function FiturUtama() {
               <p className="font-bold text-xs mr-1 text-green-500">Tersedia</p>
             </div>
             <div className="flex gap-3 mt-4">
-                <button className="bg-primary shadow-lg text-sm border-none px-1 py-1.5 flex items-center gap-2 rounded-md text-white font-semibold hover:bg-white hover:text-black border-[1.5px] hover:border-primary duration-300"> <ShoppingCart size="16"/> Mulai Belanja</button>
-                <button className="px-1 py-1.5 flex items-center text-sm gap-2 rounded-md text-primary font-semibold hover:bg-white hover:text-black border-[1.5px] border-primary duration-300"><AlertCircle size="16"/> Lihat Detail</button>
+                <a href="#diskon" className="bg-primary shadow-lg text-sm border-none px-1 py-1.5 flex items-center gap-2 rounded-md text-white font-semibold hover:bg-white hover:text-black border-[1.5px] hover:border-primary duration-300"> <ShoppingCart size="16"/> Diskon Produk</a>
+                <a href="#produk" className="px-1 py-1.5 flex items-center text-sm gap-2 rounded-md text-primary font-semibold hover:bg-white hover:text-black border-[1.5px] border-primary duration-300"><AlertCircle size="16"/> Lihat Detail</a>
             </div>
         </div>
       </div>

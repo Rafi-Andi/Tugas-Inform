@@ -26,3 +26,10 @@ git clone https://github.com/Rafi-Andi/Tugas-Inform.git .
    http://localhost:5173
    ```
    Jika port berbeda, cek terminal untuk melihat URL yang tersedia.
+
+Anggota Kelompok : 
+
+1. Habl Sankrumi Pradhab / 01
+2. Moch Rafi Andi Prayitno / 08 
+3. M Rifqi Maulana / 16
+4. Randi Permana Shidiq / 22

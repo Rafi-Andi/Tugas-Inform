@@ -20,9 +20,9 @@ export const BestProduct = () => {
           <p className="text-gray-600 mb-6">
            Temukan berbagai aksesoris gaming terbaik untuk menunjang performa dan gaya bermain Anda.
           </p>
-          <button className="bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
-            Selengkapnya
-          </button>
+          <a href="#diskon" className="bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+            Diskon Produk
+          </a>
         </div>
 
         <div className="relative">

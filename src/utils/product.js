@@ -149,8 +149,8 @@ export const displayLaptop = [
     image: '../../../assets/posterProduct/laptopAsus.png',
     name: 'ASUS TUF Gaming A15 (2023) "ASUS"',
     kategori: 'Laptop',
-    hargaAsli: 17200000, // Diubah dari 'Rp. 17.200.000'
-    hargaDiskon: 14620000, // Diubah dari 'Rp. 14.620.000'
+    hargaAsli: 17200000, 
+    hargaDiskon: 14620000,
     diskon: '15% Off',
     spesifikasi: {
       dimensi: {
@@ -180,8 +180,8 @@ export const displayLaptop = [
     image: '../../../assets/posterProduct/laptopMSI.png',
     name: 'Sword 16 HX B14V "MSI"',
     kategori: 'Laptop',
-    hargaAsli: 20500000, // Diubah dari 'Rp. 20.500.000'
-    hargaDiskon: 17425000, // Diubah dari 'Rp. 17.425.000'
+    hargaAsli: 20500000, 
+    hargaDiskon: 17425000, 
     diskon: '15% Off',
     spesifikasi: {
       dimensi: {
@@ -211,8 +211,8 @@ export const displayLaptop = [
     image: '../../../assets/posterProduct/laptopLenovo.png',
     name: 'Legion Slim 5 Gen 9 AMD (16″) with RTX 4060 "Lenovo"',
     kategori: 'Laptop',
-    hargaAsli: 30135000, // Diubah dari 'Rp. 30.135.000'
-    hargaDiskon: 25614750, // Diubah dari 'Rp. 25.614.750'
+    hargaAsli: 30135000,
+    hargaDiskon: 25614750,
     diskon: '15% Off',
     spesifikasi: {
       dimensi: {
@@ -242,8 +242,8 @@ export const displayLaptop = [
     image: '../../../assets/posterProduct/laptopAcer.png',
     name: 'Predator Helios 300 PH315-54-94U7 Gaming Notebook "Acer"',
     kategori: 'Laptop',
-    hargaAsli: 30280000, // Diubah dari 'Rp. 30.280.000'
-    hargaDiskon: 25738000, // Diubah dari 'Rp. 25.738.000'
+    hargaAsli: 30280000, 
+    hargaDiskon: 25738000,
     diskon: '15% Off',
     spesifikasi: {
       dimensi: {

@@ -10,8 +10,8 @@ function Hero(){
                         <p className="mt-2 text-xs  text-gray-400 font-md font-semibold md:text-sm w-80 lg:w-100">Aksesoris canggih untuk pengalaman digital tanpa batas.
 Dari laptop stand ergonomis hingga headphone berkelas, semua siap dukung produktivitas dan gaya hidupmu.</p>
                         <div className="flex gap-3 mt-2">
-                            <button className="bg-primary px-1.5 py-2 flex items-center gap-2 rounded-md text-white font-semibold hover:bg-white hover:text-black border-[1.5px] hover:border-primary duration-300"> <ShoppingCart size="16"/> Mulai Belanja</button>
-                            <button className="px-1.5 py-2 flex items-center gap-2 rounded-md text-primary font-semibold hover:bg-white hover:text-black border-[1.5px] border-primary duration-300"><AlertCircle size="16"/> Lihat Detail</button>
+                            <a href="#produk" className="bg-primary px-1.5 py-2 flex items-center gap-2 rounded-md text-white font-semibold hover:bg-white hover:text-black border-[1.5px] hover:border-primary duration-300"> <ShoppingCart size="16"/> Mulai Belanja</a>
+                            <a href="#fiturHeadphone" className="px-1.5 py-2 flex items-center gap-2 rounded-md text-primary font-semibold hover:bg-white hover:text-black border-[1.5px] border-primary duration-300"><AlertCircle size="16"/> Lihat Detail</a>
                         </div>
                         <div className="mt-11 flex lg:gap-4">
                             <div className="flex flex-col items-center lg:flex-row text-center lg:text-justify gap-2">
